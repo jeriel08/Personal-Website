@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --accent-color: #c74b3d;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: #1c1c1c;
+}
+
+section [class^="container"] {
+  padding: 4rem 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  section [class^="container"] {
+    padding: 4rem;
+  }
+  nav [class^="container"] {
+    padding: 0 4rem;
+  }
+}
+
+section:not(:first-of-type) {
+  text-align: center;
+}
+
+section:nth-child(2n) {
+  background-color: #f4e1d5;
+}
+
+a {
+  color: #1c1c1c;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/*Nav Bar Section*/
+
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar .navbar-brand {
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  color: #1c1c1c;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-item {
+    padding: 0 0.5rem;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+/*Hero Section*/
+
+section.hero {
+  padding-top: 72px;
+}
+
+@media screen and (max-width: 576px) {
+  section.hero {
+    text-align: center;
+  }
+
+  section.hero .img-fluid {
+    width: 80%;
+  }
+}
+
+/*Projects*/
+
+section .card,
+.btn-outline-dark {
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  max-width: 22rem;
+  margin-inline: auto;
+  transition: all 0.5s;
+}
+
+.btn-outline-dark:hover {
+  box-shadow: 4px 4px var(--accent-color);
+}
+
+/*About*/
+@media screen and (min-width: 1024px) {
+  section.about .container {
+    width: 60%;
+  }
+}
+
+/*Contact*/
+section.contact .social-media a {
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+}
