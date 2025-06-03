@@ -10,6 +10,10 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>Jeriel Sanao | Portfolio Website</title>
   </head>
   <body>
@@ -64,12 +68,6 @@
             <a href="#contact">
               <button class="btn btn-outline-dark btn-lg">Contact Me</button>
             </a>
-            <a
-              href="assets/files/Jeriel_Sanao_Resume.pdf"
-              class="btn btn-outline-dark btn-lg my-3 mx-3"
-              download
-              >Download Resume</a
-            >
           </div>
           <div class="col-sm-6 text-center">
             <img
@@ -85,30 +83,42 @@
     <section class="skills" id="skills">
       <div class="container">
         <h2 class="display-5 fw-bold text-center">Skills</h2>
+
         <div class="row text-center mt-2">
           <div class="col-md-3 mt-5">
-            <i class="bx bxl-html5 bx-lg"></i>
+            <i class="fa-brands fa-html5 bx-md"></i>
             <h5>HTML</h5>
           </div>
           <div class="col-md-3 mt-5">
-            <i class="bx bxl-css3 bx-lg"></i>
+            <i class="fa-brands fa-css3-alt bx-md"></i>
             <h5>CSS</h5>
           </div>
           <div class="col-md-3 mt-5">
-            <i class="bx bxl-javascript bx-lg"></i>
+            <i class="fa-brands fa-js bx-md"></i>
             <h5>JavaScript</h5>
           </div>
           <div class="col-md-3 mt-5">
-            <i class="bx bxl-python bx-lg"></i>
+            <i class="fa-brands fa-python bx-md"></i>
             <h5>Python</h5>
           </div>
+        </div>
+
+        <div class="row text-center">
           <div class="col-md-3 mt-5">
-            <i class="bx bxl-git bx-lg"></i>
+            <i class="fa-brands fa-git-alt bx-md"></i>
             <h5>Git</h5>
           </div>
           <div class="col-md-3 mt-5">
-            <i class="bx bxl-java bx-lg"></i>
+            <i class="fa-brands fa-java bx-md"></i>
             <h5>Java</h5>
+          </div>
+          <div class="col-md-3 mt-5">
+            <i class="fa-brands fa-laravel bx-md"></i>
+            <h5>Laravel</h5>
+          </div>
+          <div class="col-md-3 mt-5">
+            <i class="fa-brands fa-bootstrap bx-md"></i>
+            <h5>Bootstrap</h5>
           </div>
         </div>
       </div>
@@ -117,12 +127,12 @@
     <section class="projects" id="projects">
       <div class="container">
         <h2 class="display-5 fw-bold text-center">Projects</h2>
-        <div class="row justify-content-center">
-          <div class="col-auto mt-5">
-            <div class="card" style="width: 18rem">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100" style="width: 100%">
               <img
                 src="assets/images/inventory system logo.png"
-                class="img card-img-top img-fluid pt-3"
+                class="card-img-top img-fluid pt-3"
                 style="
                   max-width: 150px;
                   height: auto;
@@ -131,13 +141,42 @@
                 "
                 alt="Inventory System Logo"
               />
-              <div class="card-body">
+              <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Inventory System</h5>
                 <p class="card-text my-3">
                   IT 5 Final Project. SmartStock Tracker, an inventory system.
                 </p>
                 <a
                   href="https://github.com/jeriel08/inventory_system"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  >Check it out!</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100" style="width: 100%">
+              <img
+                src="assets/images/byte-vault.png"
+                class="card-img-top img-fluid pt-3"
+                style="
+                  max-width: 150px;
+                  height: auto;
+                  object-fit: contain;
+                  margin: 0 auto;
+                "
+                alt="Inventory System Logo"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">ByteVault Inventory System</h5>
+                <p class="card-text my-3">
+                  IT 9 Laravel 11 Final Project. Inventory system for computer
+                  setup built with role-based access, stock tracking, and more.
+                </p>
+                <a
+                  href="https://github.com/jeriel08/byte-vault"
                   target="_blank"
                   class="btn btn-outline-dark"
                   >Check it out!</a
@@ -170,21 +209,6 @@
         <p>
           Feel free to checkout my resume. Just click the button down below.
         </p>
-      </div>
-    </section>
-
-    <section class="resume" id="resume">
-      <div class="container text-center">
-        <h2 class="display-5 fw-bold">Resume</h2>
-        <p>
-          Interested in learning more about my background? Download my resume!
-        </p>
-        <a
-          href="assets/files/Jeriel_Sanao_Resume.pdf"
-          class="btn btn-outline-dark"
-          download
-          >Download Resume</a
-        >
       </div>
     </section>
 
